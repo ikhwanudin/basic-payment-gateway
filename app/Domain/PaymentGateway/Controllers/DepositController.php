@@ -3,6 +3,7 @@
 namespace App\Domain\PaymentGateway\Controllers;
 
 use App\Domain\PaymentGateway\FormRequests\DepositRequest;
+use App\Domain\PaymentGateway\Resources\DepositResource;
 use App\Http\Controllers\Controller;
 
 class DepositController extends Controller
@@ -11,6 +12,6 @@ class DepositController extends Controller
     {
         $validatedRequest = $request->validated();
 
-        return response()->json($validatedRequest);
+        return new DepositResource([]);
     }
 }
