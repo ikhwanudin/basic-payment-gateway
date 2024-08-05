@@ -14,7 +14,7 @@ class BalanceWidget extends BaseWidget
         $balance = (new GetBalance)($user_id);
 
         return [
-            Stat::make('User balance', $balance),
+            Stat::make('User balance', number_format($balance,2,',','.')),
         ];
     }
 }
