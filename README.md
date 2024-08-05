@@ -32,7 +32,7 @@ curl --location 'localhost:8000/api/deposit' \
 
 ![login](./Graphic/1.png)
 ![dashboard](./Graphic/3.1.png)
-![dashboard](./Graphic/2.png)
+![dashboard](./Graphic/2.1.png)
 ![deposit action](./Graphic/4.png)
 ![api](./Graphic/5.png)
 
