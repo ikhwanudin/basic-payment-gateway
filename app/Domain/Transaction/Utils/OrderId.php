@@ -6,6 +6,6 @@ class OrderId
 {
     public static function generate(): string
     {
-        return config('transaction.order_id.prefix') . uniqid();
+        return config('transaction.order_id.prefix').uniqid();
     }
 }

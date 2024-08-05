@@ -7,7 +7,6 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 class DepositResource extends JsonResource
 {
-
     public function toArray(Request $request): array
     {
         return [
@@ -16,5 +15,4 @@ class DepositResource extends JsonResource
             'status' => 1,
         ];
     }
-
 }

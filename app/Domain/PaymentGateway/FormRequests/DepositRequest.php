@@ -14,5 +14,4 @@ class DepositRequest extends FormRequest
             'timestamp' => 'required|date',
         ];
     }
-
 }

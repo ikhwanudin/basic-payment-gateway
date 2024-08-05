@@ -9,7 +9,7 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-Route::get('/hi', fn() => response()->json(['hi' => 'hi']));
+Route::get('/hi', fn () => response()->json(['hi' => 'hi']));
 
 Route::post('/deposit', DepositController::class)
     ->middleware([
