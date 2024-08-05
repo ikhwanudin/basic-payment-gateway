@@ -12,6 +12,6 @@ class DepositController extends Controller
     {
         $validatedRequest = $request->validated();
 
-        return new DepositResource([]);
+        return new DepositResource($validatedRequest);
     }
 }
