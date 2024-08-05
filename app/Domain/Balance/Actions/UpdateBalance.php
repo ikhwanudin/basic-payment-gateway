@@ -24,9 +24,13 @@ class UpdateBalance
                     'user_id' => $user_id,
                     'balance' => $balance,
                 ]);
+
+                return;
             } elseif (! $userBalance && $action == 'withdraw') {
                 //todo: handle insufficient balance && error handling
                 Log::error('insufficient balance');
+
+                return;
             }
 
             if ($action == 'deposit') {
